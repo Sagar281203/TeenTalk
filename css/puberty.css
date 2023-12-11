@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
+:root {
+  --bgOrange: #e84949;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Be Vietnam Pro", sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar_heading{
+    color: black;
+    font-size: x-large;
+    padding-top: 1rem;
+  }
+
+.navbar_right{
+  display: flex;
+  gap: 2rem;
+  padding: 0 4em;
+  padding-top: 1rem;
+}
+
+.navbar_right div {
+  transition: all 0.5s;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.navbar_right div a {
+  color: #000
+}
+.navbar_right div:hover {
+  transition: all 0.8s;
+  color: var(--bgOrange);
+  font-weight: bold;
+}
+
+.dropbtn {
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+@media (max-width:1500px) {
+  .navbar_right {
+    padding: 0 8em;
+  }
+}
+@media (max-width:1000px) {
+  .navbar_right {
+   display: none; 
+  }
+}
+
+/* Navbar End*/
+
+#intro{
+    background-color: rgb(241, 243, 243);
+    padding: large;
+    padding-top: 0%;
+}
+
+.intro_head{
+    text-align: center;
+    page: title;
+}
+
+.hero{
+    flex-wrap: wrap;
+    padding: large;
+    padding-left: 5rem;
+}
+
+
+blockquote {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+}
+
+.css-pc7ote {
+  background-color: #f7f7f7;
+  line-height: 26px;
+  margin: 30px 125px;
+  padding: 26px 30px;
+  border-left-style: solid;
+  border-left-width: 4px;
+  border-color: #f0533a;
+}
